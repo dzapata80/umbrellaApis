@@ -26,6 +26,8 @@ data = {
 # Make the request to obtain the token
 response = requests.post(token_url, headers=headers, data=data)
 
+print('Status code:', response.status_code)
+
 if response.status_code == 200:
     token_data = response.json()
 
@@ -33,5 +35,3 @@ if response.status_code == 200:
     access_token = token_data['access_token']
     expires_in = token_data['expires_in']
 
-    print('Status code:', response.status_code)
-    print('Access token:', access_token)
