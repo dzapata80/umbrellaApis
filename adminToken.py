@@ -5,8 +5,8 @@ import base64
 token_url = "https://api.umbrella.com/auth/v2/token"
 
 # Your credentials for basic authentication
-apiKey = "Your API Key"
-apiSecret = "Your API Secret"
+apiKey = "249c0fc87c874cc3a5ecd41ade2ac60e"
+apiSecret = "d8acb8574b49497bb8d232db1cc0a4ee"
 
 # Encode the credentials in base64
 credentials = f"{apiKey}:{apiSecret}"
